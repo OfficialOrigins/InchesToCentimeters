@@ -25,37 +25,43 @@
 //     {
 //       double finalResult; 
 //       const double Conversion = 2.54; 
-      
+
 //       Console.WriteLine("Enter the amount of inches: "); 
 //       int inch = Convert.ToInt32(Console.ReadLine());
-      
+
 //       Console.WriteLine(" ");
-      
+
 //       finalResult = inch * Conversion; 
-  
+
 //       Console.WriteLine("The amount of inches: {0}", inch);
 //       Console.WriteLine("Conversion to centimeters: {0}", finalResult);
 //     }
 // }
 
-//Module 2 excercise 2.1.2
+//Module 2 excercise 2.2 (MoveEstimater)
 using System;
 
-class Program 
+class Program
 {
-    public static void Main (string[] args) 
+    public static void Main(string[] args)
     {
-      double finalResult; 
-      const double Conversion = 2.54; 
+        const int Mile = 2;
+        const int Hour = 150;
+        const int baseRate = 200;
+        double finalResult; 
 
-      Console.WriteLine("Enter the amount of inches: "); 
-      int inch = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter the amount of hours: ");
+        double time = Convert.ToDouble(Console.ReadLine());
 
-      Console.WriteLine(" ");
+        Console.WriteLine("Enter the amount of miles: ");
+        double tripMiles = Convert.ToDouble(Console.ReadLine()); 
 
-      finalResult = inch * Conversion; 
+        double Mileage = (Mile * tripMiles);
 
-      Console.WriteLine("The amount of inches: {0}", inch);
-      Console.WriteLine("Conversion to centimeters: {0}", finalResult);
+        double timePrice = (Hour * time); 
+
+        finalResult = (Mileage + timePrice + baseRate); 
+
+        Console.WriteLine("Your total price is: {0}", finalResult);
     }
 }
