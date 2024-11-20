@@ -45,9 +45,9 @@ class Program
 {
     public static void Main(string[] args)
     {
-        const int Mile = 2;
-        const int Hour = 150;
-        const int baseRate = 200;
+        const int MILE = 2;
+        const int HOUR = 150;
+        const int BASERATE = 200;
         double finalResult; 
 
         Console.WriteLine("Enter the amount of hours: ");
@@ -56,11 +56,11 @@ class Program
         Console.WriteLine("Enter the amount of miles: ");
         double tripMiles = Convert.ToDouble(Console.ReadLine()); 
 
-        double Mileage = (Mile * tripMiles);
+        double Mileage = (MILE * tripMiles);
 
-        double timePrice = (Hour * time); 
+        double timePrice = (HOUR * time); 
 
-        finalResult = (Mileage + timePrice + baseRate); 
+        finalResult = (Mileage + timePrice + BASERATE); 
 
         Console.WriteLine("Your total price is: {0}", finalResult);
     }
